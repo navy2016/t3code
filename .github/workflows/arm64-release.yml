@@ -60,9 +60,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Generate Android project
         working-directory: apps/mobile
         run: pnpm exec expo prebuild --clean --platform android --no-install
